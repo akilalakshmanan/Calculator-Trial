@@ -36,7 +36,7 @@ public class Calculator {
                     double result = cal.factorial(num1);
                     System.out.println("Factorial of " + num1 + " = " + result);
                     break;
-                /*case 3:
+                case 3:
                     System.out.println("Natural Logarithm Operation:");
                     System.out.print("Enter the number: ");
                     num1 = scanner.nextDouble();
@@ -49,7 +49,7 @@ public class Calculator {
                     System.out.println("Enter the second number : ");
                     num2 = scanner.nextDouble();
                     System.out.println("Power :" + num1 + "^" + num2 + " = " + cal.power(num1,num2));
-                    break;*/
+                    break;
 
                 case 5:
                     System.out.println("Exiting....");
@@ -83,7 +83,7 @@ public class Calculator {
         }
     }
 
-  /*  public double logarithm(double var){
+    public double logarithm(double var){
         System.out.print("Calculating Natural Logarithm of : " + var + "\n Result : " + Math.log(var));
 //        logger.info("Calculating Natural Logarithm of : " + var + "\n Result : " + Math.log(var));
         return Math.log(var);
@@ -92,7 +92,7 @@ public class Calculator {
         System.out.print("Power : " + var1 + "^" + var2 + "/n Result : " + Math.pow(var1, var2));
 //        logger.info("Power : " + var1 + "^" + var2 + "/n Result : " + Math.pow(var1, var2));
         return Math.pow(var1, var2);
-    }*/
+    }
 
 //    }
 
