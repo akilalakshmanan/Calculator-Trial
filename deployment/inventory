@@ -1,5 +1,2 @@
-//[ubuntu]
-//172.16.144.138 ansible_user=akila
-
 [docker]
 172.17.0.2 ansible_user=akila ansible_pass=akila1811
