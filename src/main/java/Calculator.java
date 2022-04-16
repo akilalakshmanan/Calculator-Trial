@@ -16,9 +16,10 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to our Scientific Calculator!!!");
         System.out.println("Git SCM Polling working well in Jenkins Pipeline -- Test cases added!!!");
+        System.out.println("Dockerising the application");
         while (true)
         {
-            System.out.print("Choose to perform operation \n 1.Square Root \n 2.Factorial \n 3.Natural Logarithm \n 4.Power function \n 5.Exit");
+            System.out.print("Choose to perform operation \n 1.Square Root \n 2.Factorial \n 3.Natural Logarithm \n 4.Power function \n 5.Exit \n");
             choice = scanner.nextInt();
             switch (choice)
             {
