@@ -15,7 +15,7 @@ public class Calculator {
         double num1, num2;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to our Scientific Calculator!!!");
-        System.out.println("Welcome to our Scientific Calculator!!!");
+        System.out.println("Tryinnggg!!!");
         while (true)
         {
             System.out.print("Choose to perform operation \n 1.Square Root \n 2.Factorial \n 3.Natural Logarithm \n 4.Power function \n 5.Exit");
