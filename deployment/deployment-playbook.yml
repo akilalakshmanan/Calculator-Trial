@@ -4,5 +4,5 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: vtandonv/calculatorusingdevopslatest
+        name: akila1811/spe-mini-project
         source: pull
