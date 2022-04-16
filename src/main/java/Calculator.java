@@ -28,7 +28,7 @@ public class Calculator {
                     System.out.println("Square Root of " + num1 + " = " + cal.squareRoot(num1));
                     break;
 
-                case 2:
+               /* case 2:
                     System.out.println("Factorial Operation:");
                     System.out.print("Enter the number: ");
                     num1 = scanner.nextDouble();
@@ -48,7 +48,7 @@ public class Calculator {
                     System.out.println("Enter the second number : ");
                     num2 = scanner.nextDouble();
                     System.out.println("Power :" + num1 + "^" + num2 + " = " + cal.power(num1,num2));
-                    break;
+                    break;*/
 
                 case 5:
                     System.out.println("Exiting....");
@@ -65,7 +65,7 @@ public class Calculator {
 //        logger.info("Calculating Square Root of : " + var + "\n Result : " + Math.sqrt(var));
         return Math.sqrt(var);
     }
-    public double factorial(double var){
+   /* public double factorial(double var){
         if(var < 0){
             System.out.print("Factorial of negative number is not possible!");
 //            logger.info("Factorial of negative number is not possible!");
@@ -91,7 +91,7 @@ public class Calculator {
         System.out.print("Power : " + var1 + "^" + var2 + "/n Result : " + Math.pow(var1, var2));
 //        logger.info("Power : " + var1 + "^" + var2 + "/n Result : " + Math.pow(var1, var2));
         return Math.pow(var1, var2);
-    }
+    }*/
 
 //    }
 
