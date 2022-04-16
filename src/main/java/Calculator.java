@@ -28,14 +28,14 @@ public class Calculator {
                     System.out.println("Square Root of " + num1 + " = " + cal.squareRoot(num1));
                     break;
 
-               /* case 2:
+                case 2:
                     System.out.println("Factorial Operation:");
                     System.out.print("Enter the number: ");
                     num1 = scanner.nextDouble();
                     double result = cal.factorial(num1);
                     System.out.println("Factorial of " + num1 + " = " + result);
                     break;
-                case 3:
+                /*case 3:
                     System.out.println("Natural Logarithm Operation:");
                     System.out.print("Enter the number: ");
                     num1 = scanner.nextDouble();
@@ -65,7 +65,7 @@ public class Calculator {
 //        logger.info("Calculating Square Root of : " + var + "\n Result : " + Math.sqrt(var));
         return Math.sqrt(var);
     }
-   /* public double factorial(double var){
+    public double factorial(double var){
         if(var < 0){
             System.out.print("Factorial of negative number is not possible!");
 //            logger.info("Factorial of negative number is not possible!");
@@ -82,7 +82,7 @@ public class Calculator {
         }
     }
 
-    public double logarithm(double var){
+  /*  public double logarithm(double var){
         System.out.print("Calculating Natural Logarithm of : " + var + "\n Result : " + Math.log(var));
 //        logger.info("Calculating Natural Logarithm of : " + var + "\n Result : " + Math.log(var));
         return Math.log(var);
