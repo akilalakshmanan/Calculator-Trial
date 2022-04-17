@@ -1,8 +1,10 @@
----
-- name: Pull docker image of Calculator
-  hosts: all
-  tasks:           
-    - name: Pull image
-      docker_image:
-        name: akila1811/spe-mini-project:latest
-        source: pull  
+---  
+- hosts: all
+  become: true
+  
+  tasks:    
+    - name: Pull image from dockerhub
+      command: docker pull akila1811/spe-mini-project:latest
+    
+    - name: Building docker container from image
+      command: docker run -d --name calci akila1811/spe-mini-project:latest
