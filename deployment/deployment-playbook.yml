@@ -8,13 +8,14 @@
     
   tasks:   
     - name: Install docker
-      package:
-        name: docker
+      apt:
+        name: 'docker-ce'
         state: present
+        force_apt_get: "yes"
         
     - name: Start docker service
       service:
-        name: docker
+        name: 'docker'
         state: started
         enabled: yes
         
