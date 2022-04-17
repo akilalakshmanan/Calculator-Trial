@@ -1,11 +1,6 @@
 ---
 - name: Pull docker image of Calculator
   hosts: all
-  become: yes
-  become_method: sudo
-  become_user: akila  
-  
-    
   tasks:           
     - name: Pull image
       docker_image:
