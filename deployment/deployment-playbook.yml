@@ -3,7 +3,7 @@
   hosts: all
   become: yes
   become_method: sudo
-  become_user: root  
+  become_user: akila  
   tasks:
     - name: install docker
       yum: name=docker
