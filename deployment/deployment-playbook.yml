@@ -9,7 +9,7 @@
   tasks:   
     - name: Add Docker GPG apt Key
       apt_key:
-        url: https://download.docker.com/linux/ubuntu/gpg
+        url: 'https://download.docker.com/linux/ubuntu/gpg'
         state: present
     
     - name: Add Docker Repository
