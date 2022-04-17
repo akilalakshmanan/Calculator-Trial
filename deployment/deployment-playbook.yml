@@ -8,10 +8,10 @@
     
   tasks:   
     - name: Install docker
-      yum:
-        name: 'docker'
+      apt:
+        name: 'docker-ce'
         state: present
-        enabled: yes
+        force_apt_get: yes
         
         
     - name: Start docker service
