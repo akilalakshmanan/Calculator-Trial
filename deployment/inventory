@@ -1,3 +1,3 @@
 [xubuntu]
-192.168.0.105 ansible_user=gokul
+192.168.0.105 ansible_pass=1811 ansible_user=gokul ansible_connection=ssh
 
