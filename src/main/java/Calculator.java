@@ -1,9 +1,12 @@
 import java.util.Scanner;
 
+import java.util.InputMismatchException;
 import static java.lang.System.exit;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Calculator {
-    // private static final Logger logger = LogManager.getLogger(String.valueOf(Calculator.class));
+    private static final Logger logger = LogManager.getLogger("["+String.valueOf(Calculator.class)+"]");
     
     public static void main(String[] args)
     {
@@ -19,7 +22,11 @@ public class Calculator {
             System.out.println("\n");
             System.out.print("Select one of the following operation \n=> 1.Square Root \n=> 2.Factorial \n=> 3.Natural Logarithm \n=> 4.Power function \n=> 5.Exit \n");
             System.out.print("Enter your option :: ");
-            option = scanner.nextInt();
+            try {
+                option = scanner.nextInt();
+            } catch (InputMismatchException error) {
+                return;
+            }
             switch (option)
             {
                 case 1:
@@ -58,12 +65,12 @@ public class Calculator {
         }
     }
     public double sqrt(double var){
-        // logger.info("Calculating Square Root of : " + var + "\n Result : " + Math.sqrt(var));
+        logger.info("Square Root of [ " + var + " ]\n Result [ " + Math.sqrt(var) +" ]");
         return Math.sqrt(var);
     }
     public double fact(double var){
         if(var < 0){
-            // logger.info("Factorial of negative number is not possible!");
+            logger.info("Factorial of negative number is not possible");
             return Double.NaN;
         }
         else{
@@ -71,17 +78,17 @@ public class Calculator {
             for(int i = 1; i <= var; i++){
                 fact *= i;
             }
-            // logger.info("Factorial of the number : " + var + "\n Result is : " + fact);
+            logger.info("Factorial of [ " + var + " ]\n Result is [ " + fact +" ]");
             return fact;
         }
     }
     public double log(double var){
-        // logger.info("Calculating Natural Logarithm of : " + var + "\n Result : " + Math.log(var));
+        logger.info("Natural Logarithm of [ " + var + " ]\n Result [ " + Math.log(var) +" ]");
         return Math.log(var);
     }
 
     public double power(double var1, double var2){
-        // logger.info("Power : " + var1 + "^" + var2 + "/n Result : " + Math.pow(var1, var2));
+        logger.info("Power [ " + var1 + " ]^[ " + var2 + " ]\n Result [ " + Math.pow(var1, var2) +" ]");
         return Math.pow(var1, var2);
     }
 
