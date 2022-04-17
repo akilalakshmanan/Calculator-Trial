@@ -3,8 +3,16 @@
   
   
   tasks:    
+    - name: stop container
+      command: docker stop calci
+      ignore_errors: yes
+      
+    - name: remove container
+      command: docker rm calci
+      ignore_errors: yes
+      
     - name: Pull image from dockerhub
       command: docker pull akila1811/spe-mini-project:latest
     
     - name: Building docker container from image
-      command: docker run -d --name calci akila1811/spe-mini-project:latest
+      command: docker run -it --name calci akila1811/spe-mini-project:latest /bin/bash
