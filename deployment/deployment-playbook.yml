@@ -4,6 +4,7 @@
   become: yes
   become_method: sudo
   become_user: root
+  become_ask_pass: False
   tasks:
     - name: install docker
       yum: name=docker
