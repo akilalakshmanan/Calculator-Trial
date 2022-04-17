@@ -2,11 +2,13 @@
 - name: Pull docker image of Calculator
   hosts: all
   tasks:
-    - name: Pull image
-      docker_image:
-        name: akila1811/spe-mini-project
-        source: pull
     - name: Start services
       service: 
         name: docker 
         state: started
+        
+    - name: Pull image
+      docker_image:
+        name: akila1811/spe-mini-project
+        source: pull
+    
