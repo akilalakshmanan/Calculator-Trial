@@ -6,7 +6,7 @@
   become_user: akila  
   
   vars:
-    service_name: 'yum install docker'
+    service_name: yum install docker
     
   tasks:   
     - name: Start services
