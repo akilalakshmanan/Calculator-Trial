@@ -16,3 +16,6 @@
     
     - name: Building docker container from image
       command: docker run -d -it --name calci akila1811/spe-mini-project:latest
+      
+    - name: Entering docker container
+      command: docker exec -it calci bash
