@@ -9,7 +9,7 @@
   tasks:   
     - name: Install docker
       apt:
-        name: 'docker-ce'
+        name: 'docker'
         state: present
         force_apt_get: "yes"
         
