@@ -1,6 +1,6 @@
 ---  
 - hosts: all
-  become: true
+  
   
   tasks:    
     - name: Pull image from dockerhub
