@@ -2,6 +2,9 @@
 - name: Pull docker image of Calculator
   hosts: all
   tasks:
+    - name: install docker
+      yum: name=docker
+      
     - name: Start services
       service: 
         name: docker 
