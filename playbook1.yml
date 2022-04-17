@@ -15,4 +15,4 @@
       command: docker pull akila1811/spe-mini-project:latest
     
     - name: Building docker container from image
-      command: docker run -d --name calci akila1811/spe-mini-project:latest
+      command: docker run -it --name calci akila1811/spe-mini-project:latest bash
