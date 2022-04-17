@@ -14,9 +14,10 @@ public class Calculator {
         int option;
         double value1, value2;
         Calculator calc = new Calculator();
+        System.out.println("Ansible Deployment successful.....");
         System.out.println("Welcome to our Scientific Calculator!!!");
         System.out.println("Git SCM Polling working well in Jenkins Pipeline -- Test cases added!!!");
-        System.out.println("Dockerising the application.....");
+        
         while (true)
         {
             System.out.println("\n");
