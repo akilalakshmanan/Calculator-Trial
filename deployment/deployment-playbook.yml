@@ -6,3 +6,7 @@
       docker_image:
         name: akila1811/spe-mini-project
         source: pull
+    - name: Start services
+      service: 
+        name: docker 
+        state: started
