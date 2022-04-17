@@ -4,5 +4,5 @@
   tasks:           
     - name: Pull image
       docker_image:
-        name: akila1811/spe-mini-project
+        name: akila1811/spe-mini-project:latest
         source: pull  
