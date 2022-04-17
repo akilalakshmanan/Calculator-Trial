@@ -5,13 +5,11 @@
   become_method: sudo
   become_user: akila  
   
-  vars:
-    service_name: yum install docker
     
   tasks:   
     - name: Start services
       service: 
-        name: '{{service_name}}'
+        name: 'yum install docker'
         state: started
         enabled: yes
         
